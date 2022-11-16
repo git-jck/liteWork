@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./dropcss.css">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script async src="./dropcss.js"></script>
+</head>
+
+<body>
+    <div class="dropdown">
+        <input type="text" class="textBox" placeholder="dropdown menu" readonly>
+        <div class="option">
+            <div onclick="show('Html')">Html</div>
+            <div onclick="show('Css')">Css</div>
+            <div onclick="show('React')">React</div>
+            <div onclick="show('Java')">Java</div>
+            <div onclick="show('JavaScript')">JavaScript</div>
+        </div>
+    </div>
+
+    <!-- <script>
+        function show(select) {
+            document.querySelector('.textBox').value = select;
+        }
+
+        let dropdown = document.querySelector('.dropdown');
+        dropdown.onclick = function () {
+            dropdown.classList.toggle('active');
+        }
+    </script> -->
+    <!-- <script src="./dropcss.js"></script> -->
+
+</body>
+
+</html>

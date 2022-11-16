@@ -1,0 +1,424 @@
+::-webkit-scrollbar {
+  width: 10px;
+  opacity: 0.5;
+}
+
+::-webkit-scrollbar-thumb {
+  background: darkcyan;
+}
+
+::-webkit-scrollbar-track-piece {
+  background: goldenrod;
+  opacity: 0.5;
+}
+
+::-webkit-resizer {
+  background: pink;
+}
+
+.note {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.note span {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+hr {
+  border-bottom: 3px double darkgreen;
+}
+
+.note {
+  font-size: 22px;
+}
+
+div.float {
+  display: inline-block;
+  /* float:left; */
+  width: 200px;
+  margin: 10px 0 0 10px;
+  border: 1px solid grey;
+  padding: 5px;
+}
+
+div.gallery {
+  height: 150px;
+  width: 200px;
+  overflow: hidden;
+}
+
+div.gallery1 {
+
+  width: 200px;
+  height: 150px;
+  padding: 5px;
+  overflow: hidden;
+  display: table-cell;
+}
+
+
+div.gallery img {
+  width: auto;
+  height: 100%;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+
+@media only screen and (max-width: 800px) {
+  div.float {
+    float: left;
+    width: 45.99999%;
+  }
+
+  div.gallery {
+    height: 300px;
+    width: auto;
+    overflow: hidden;
+  }
+}
+
+
+/* ===================================================> FLEX */
+
+.flex {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  /* justify-content : space-evenly; */
+  align-items: center;
+  align-content: center;
+  border: 1px solid red;
+  padding: 5px;
+  height: 400px;
+}
+
+.flex-item {
+  width: 300px;
+  height: 100px;
+  background-color: bisque;
+  border: 1px solid green;
+}
+
+.flex-item:nth-child(1) {
+  background-color: red;
+}
+
+.flex-item:nth-child(2) {
+  background-color: green;
+}
+
+.flex-item:nth-child(3) {
+  background-color: blue;
+  height: 50px;
+}
+
+.flex-item:nth-child(4) {
+  background-color: yellow;
+}
+
+.flex-item:nth-child(5) {
+  background-color: orange;
+}
+
+.flex-item:nth-child(6) {
+  background-color: purple;
+}
+
+.flex-item:nth-child(7) {
+  background-color: brown;
+}
+
+.flex-item:nth-child(8) {
+  background-color: black;
+}
+
+.flexleft1 {
+  display: inline-block;
+  width: 100%;
+}
+
+.flexright2 {
+  display: inline-block;
+  width: auto;
+}
+
+@media only screen and (max-width: 500px) {
+  div.float {
+    width: 100%;
+  }
+}
+
+.whblock1 {
+  border: 1px solid red;
+}
+
+.whblock2 {
+  border: 1px solid green;
+}
+
+.flexa {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.div1 {
+  background: blue;
+  height: 10vh;
+  width: 200px;
+}
+
+.div2 {
+  background: red;
+  height: 30vh;
+  width: 200px;
+}
+
+.div3 {
+  background: green;
+  height: 30vh;
+  width: 200px;
+}
+
+/* ======================================== */
+
+.adj {
+  margin: auto;
+  background-color: yellowgreen;
+  display: inline-flex;
+  justify-content: space-between;
+  width: 20%;
+}
+
+/* =========================================>  */
+
+.ratio {
+  aspect-ratio: 16 / 9;
+  width: 150px;
+  border: 1px solid red;
+}
+
+/* =========================================> img jck */
+
+.img-block {
+  width: 400px;
+  height: 450px;
+  /* width: 30%;
+  aspect-ratio: 16 / 9; */
+
+  border: 2px solid red;
+  overflow: hidden;
+}
+
+.img-block img {
+  width: 100%;
+  display: block;
+  object-fit: none;
+  object-position: 50% 120%;
+  transform: scale(1.1);
+}
+
+p.p-padd {
+  padding: 15px 5px;
+  margin: 10px 5px;
+}
+
+/* ===============================> shape radius */
+
+.shape-radius {
+  width: 300px;
+  aspect-ratio: 2 / 1;
+  margin: 0 auto;
+  text-align: center;
+  border: 2px solid brown;
+  border-radius: 100% 0 0 100%/50%;
+}
+
+.shape-builder {
+  width: 100px;
+  height: 0;
+  border-bottom: 100px solid #32557f;
+
+  border-right: 40px solid transparent;
+}
+
+h1.cuecue {
+  voice-family: male;
+  richness: 80;
+  cue-before: url("beep.au");
+}
+
+/* ====================================== form element */
+
+.form-style {
+  font-size: 18px;
+  line-height: 40px;
+  /* height and line height are same for input elements */
+  width: 100px;
+  padding: 5px 10px;
+  background-color: cornflowerblue;
+  transition: all 0.5s ease;
+  /* outline: none; */
+  border: none;
+  margin: 0 20px;
+}
+
+.form-style:focus {
+  width: 200px;
+  border-color: tomato;
+  outline: none;
+}
+
+input[required] {
+  background-color: tomato;
+  outline-color: brown;
+}
+
+/* ========================================== */
+
+.child-none {
+  padding: 80px;
+  background: darkcyan;
+  opacity: 1;
+  position: relative;
+}
+
+.child-none .child {
+  opacity: 1;
+  width: 200px;
+  margin: 0 auto;
+  padding: 10px;
+  background-color: darkorange;
+  position: absolute;
+  left: 50%;
+}
+
+/* ===============================> after */
+
+.after {
+  background-color: lightsalmon;
+  width: 25%;
+  margin: 0 auto;
+  height: 200px;
+  position: relative;
+  /* overflow: hidden; */
+}
+
+.after::before {
+  position: absolute;
+  content: "jigar";
+  margin: -20% 0 0 -20%;
+  width: 100px;
+  height: 100px;
+  /* right: 20px;
+  top: 20%; */
+  background-color: #32557f;
+}
+
+/* ========================================> Grid */
+
+.grid-main {
+  width: 80%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 200px 200px auto 200px;
+}
+
+.grid-main>div {
+  border: 2px dotted grey;
+  min-height: 50px;
+}
+
+.grid-inner3 {
+  grid-row: span 3;
+}
+
+.grid-inner20 {
+  grid-area: 8 /1 /9 / 4;
+}
+
+/* ==================================> max - min width and margin auto */
+
+.div-btn {
+  padding: 10px 15px;
+  display: block;
+  font-size: 22px;
+  background-color: chocolate;
+  color: blanchedalmond;
+  /* min-width: 200px; */
+  margin: 0 auto;
+}
+
+
+/* ===================================> table  */
+
+.table1 {
+  border: 2px solid blue;
+  margin: 0 auto;
+  max-width: 300px;
+  /*for align center width or max width is necessary, but on button its also work with min width or no width*/
+}
+
+.table {
+  margin: 0 auto;
+  display: table;
+  /* max-width: 400px; */
+  border: 2px solid blue;
+}
+
+table {
+  /* margin: 0 auto; */
+  border: 2px solid grey;
+  border-collapse: collapse;
+}
+
+td {
+  border: 2px dotted grey;
+  font-size: 40px;
+  padding: 10px 20px;
+}
+
+/* ===========================image gradient overlay */
+
+.bg-img {
+  width: 50%;
+  height: auto;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: antiquewhite;
+  font-size: 5rem;
+  font-family: 'Island Moments', cursive;
+  background-image: linear-gradient(/* to right */ 45deg, rgba(255, 166, 0, 0.487), rgba(255, 0, 51, 0.481), rgba(0, 0, 255, 0.418)), url(./htmlprops/back.png);
+  background-position: center;
+  background-size: cover;
+}
+
+/* ===================> width: auto; in ul element */
+
+.ulflex {
+  /* display: flex; */
+}
+
+.ulflex span {
+  /* display: inline; */
+  width: 20%;
+  margin-left: auto;
+}
+.ultest {
+  display: block;
+  width: auto;
+  /* margin: 0; */
+  /* margin-left: auto; */
+}
+
+.ultest li {
+  /* display: inline; */
+}

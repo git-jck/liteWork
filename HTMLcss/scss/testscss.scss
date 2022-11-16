@@ -1,0 +1,59 @@
+$fontblue: blue;
+$fontred: red;
+$arial: "Arial";
+
+h1 {
+    color: $fontblue;
+    font-family: $arial;
+}
+
+// MY CUSTOM COLOR VARIABLES
+$custom-color: lime;
+
+body {
+    background-color: #bbbaba;
+}
+
+// RESTYLING THE TABS USING THE CUSTOM VARIABLE
+.tabs {
+    .tab {
+        a {
+            color: $custom-color;
+
+            &.active {
+                color: pink;
+                
+                &:hover {
+                    color: pink;
+                    background-color: yellow;
+                }
+                
+                &:focus {
+                    background-color: rgba(yellow, 0.1);
+                    
+                    &.active {
+                        background-color: rgba($custom-color, 0.1);
+                    }
+                }
+            }
+        }
+    }
+
+    .indicator {
+        background-color: $custom-color;
+    }
+}
+
+input {
+    &.testscss {
+        background-color: rgba(orange, 0.8);
+    }
+    
+    &:focus {
+        background-color: rgba(red, 0.8);
+    }
+        &:hover {
+            background-color: rgba(pink, 0.8);
+        }
+        
+}

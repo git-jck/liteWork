@@ -1,0 +1,30 @@
+.border {
+    border: 5rem solid #000;
+}
+
+.block {
+    background-image: url(./htmlprops/imgjck.png);
+    position: relative;
+    width: 500px;
+}
+
+.block::before {
+    background-color: rgba(0, 0, 0, 0.37);
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+}
+
+.block1 {
+    width: 500px;
+    height: auto;
+    background:linear-gradient(to right, rgba(109, 179, 242, .6), rgba(7, 50, 87, 0.6)),url(./htmlprops/imgjck.png);
+}
+
+.block2{
+    background-image: url(./htmlprops/imgjck.png);
+    background-color: rgba(7, 50, 87, 0.6);
+    background-repeat: no-repeat;
+}

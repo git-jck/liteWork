@@ -1,0 +1,66 @@
+.col1 {
+    background-color: bisque;
+    border: 1px solid green;
+}
+
+[class*="col-"] {
+  background-color: bisque;
+    border: 1px solid green;
+}
+
+.note {
+  font-size: 22px;
+  font-weight: bold;
+}
+.note span {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.div1 {
+    background: blue;
+    height: 10vh;
+    width: 50%;  
+    /* display: inline-block; */
+  }
+  
+  .div2 {
+    background: red;
+    height: 30vh;
+    width: 50%;
+    display: inline-block;
+  }
+  
+  .div3 {
+    background: green;
+    height: 30vh;
+    width: 40%;
+    display: inline-block;
+  }
+
+  .div4 {
+    background: yellow;
+    display: inline-block;
+  }
+
+  #container {
+    display: inline-block;
+    position: relative;
+    width: 50%;
+    background-color: aqua;
+  }
+  
+  #dummy {
+    margin-top: 75%;
+    /* 4:3 aspect ratio */
+    background-color: blue;
+  }
+  
+  #element {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: silver/* show me! */
+  }
